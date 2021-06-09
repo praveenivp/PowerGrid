@@ -21,11 +21,11 @@ class Tracer {
 public:
     Tracer(const char* name)
     {
-        nvtxRangePushA(name);
+        //nvtxRangePush(name);
     }
     ~Tracer()
     {
-        nvtxRangePop();
+        //nvtxRangePop();
     }
 };
 #define RANGE(name) Tracer uniq_name_using_macros(name);
